@@ -1,8 +1,9 @@
-:root{--teal:#13b9a0;--teal-dark:#0f9f85;--coral:#e47e59;--text:#1f2529;--sand:#f5e9df}
+/* Theme */
+:root{--teal:#12b29a;--teal-dark:#0f9f85;--coral:#e0714f;--text:#1f2937;--sand:#ffffff}
 
 /* Typography helpers */
 .font-display{font-family:"Baloo 2", system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif}
-.brand-title{text-shadow:2px 2px 0 rgba(0,0,0,.25)}
+.brand-title{text-shadow:1px 1px 0 rgba(0,0,0,.2)}
 
 /* Buttons */
 .btn-primary{background:var(--teal);color:#fff;padding:.7rem 1.1rem;border-radius:.65rem;font-weight:700;display:inline-flex;align-items:center;gap:.5rem}
@@ -15,7 +16,17 @@
 /* Cards */
 .card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:.9rem;padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 
-/* Carousel */
+/* Hero full-bleed */
+.hero{position:relative;min-height:68vh;border-radius:0;overflow:hidden}
+.hero .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:opacity .6s ease;opacity:0}
+.hero .hero-bg.is-active{opacity:1}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.15) 40%,rgba(0,0,0,0) 70%)}
+.hero .content{position:relative;z-index:2;color:#fff;padding:4rem 1rem}
+.hero .dots{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);display:flex;gap:.4rem;z-index:2}
+.hero .dots button{height:8px;width:8px;border-radius:9999px;background:rgba(255,255,255,.6);border:none}
+.hero .dots button[aria-current="true"]{background:#fff}
+
+/* Carousel (still used elsewhere) */
 .carousel-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.95);border:1px solid rgba(0,0,0,.08);backdrop-filter:blur(6px);height:48px;width:48px;border-radius:9999px;display:grid;place-items:center;font-size:26px}
 @media (min-width:768px){.carousel-nav{height:56px;width:56px;font-size:32px}}
 #carouselTrack>li{display:inline-block;width:100%;height:100%}
@@ -25,6 +36,29 @@
 .caption .title{font-weight:800}
 
 /* Badges & CTA */
-.badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;border:1px solid rgba(0,0,0,.08);padding:.28rem .65rem;border-radius:9999px;background:#fff}
+.badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;border:1px solid rgba(255,255,255,.4);padding:.3rem .7rem;border-radius:9999px;background:rgba(0,0,0,.15);color:#fff}
 .badge-dot{height:.55rem;width:.55rem;border-radius:9999px;background:var(--coral)}
 .cta-banner{background:linear-gradient(90deg,var(--coral),#d66f49);color:#fff;border-radius:1rem}
+
+/* Stats strip */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.stat{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:.9rem;padding:1.25rem;text-align:center}
+.stat .num{font-size:2rem;font-weight:800;color:var(--teal)}
+.stat .label{font-size:.9rem;color:#4b5563}
+@media (max-width:768px){.stats{grid-template-columns:1fr 1fr}.stat .num{font-size:1.6rem}}
+
+/* Reviews slider */
+.review-strip{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.5rem}
+.review-card{scroll-snap-align:start;min-width:300px;max-width:360px}
+.stars{color:#f59e0b}
+
+/* Masonry gallery */
+.masonry{column-count:1;column-gap:.75rem}
+@media (min-width:640px){.masonry{column-count:2}}
+@media (min-width:1024px){.masonry{column-count:3}}
+.masonry img{width:100%;margin:0 0 .75rem;border-radius:.6rem;display:block}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:50}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:92vh;border-radius:.5rem}

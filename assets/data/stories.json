@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Vedic Maths Workshop",
+        "date": "2025-07-20",
+        "excerpt": "Students learned rapid multiplication and mental math tricks in a fun hands‑on session.",
+        "image": "/assets/img/gallery/sample1.jpg",
+        "link": "/pages/method.html"
+    },
+    {
+        "title": "Chapter‑wise Test Series",
+        "date": "2025-06-10",
+        "excerpt": "Weekly assessments to track progress and give focused feedback.",
+        "image": "/assets/img/gallery/sample2.jpg",
+        "link": "/pages/courses.html"
+    },
+    {
+        "title": "Doubt Clearing Marathon",
+        "date": "2025-05-18",
+        "excerpt": "Extended doubt sessions before exams with one‑on‑one help.",
+        "image": "/assets/img/gallery/sample3.jpg",
+        "link": "/pages/contact.html"
+    }
+]
