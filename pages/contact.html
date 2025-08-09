@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Math‑Mate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#FAFAF9] text-[#1F2937] [font-family:Inter,ui-sans-serif,system-ui]">
+    <header class="sticky top-0 z-20 bg-white/80 backdrop-blur border-b">
+        <nav class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3"><span
+                    class="inline-block h-8 w-8 rounded bg-[#11BFA6]"></span><span
+                    class="font-bold">Math‑Mate</span></a>
+            <a href="tel:+919448500475" class="btn-primary">Call</a>
+        </nav>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-12 grid md:grid-cols-2 gap-10">
+        <section>
+            <h1 class="[font-family:'Source Serif 4',serif] text-4xl font-semibold">Get in touch</h1>
+            <p class="mt-2 text-gray-600">We’ll get back within 24 hours.</p>
+            <form class="mt-6 card space-y-3" action="https://formspree.io/f/your-id" method="POST">
+                <input type="text" name="name" placeholder="Your name" required class="w-full border rounded p-2" />
+                <input type="email" name="email" placeholder="Email" required class="w-full border rounded p-2" />
+                <input type="tel" name="phone" placeholder="Phone" class="w-full border rounded p-2" />
+                <textarea name="message" placeholder="How can we help?" rows="4" required
+                    class="w-full border rounded p-2"></textarea>
+                <!-- Honeypot -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+                <button class="btn-primary" type="submit">Send</button>
+                <p class="text-xs text-gray-500">Submitting sends data to Formspree.</p>
+            </form>
+            <div class="mt-6 flex gap-3">
+                <a class="btn-outline" href="https://wa.me/919448500475" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="btn-link" href="tel:+919448500475">Call +91 94485 00475</a>
+            </div>
+        </section>
+        <section>
+            <div class="card p-0 overflow-hidden">
+                <iframe title="Math‑Mate Location" width="100%" height="360" style="border:0" loading="lazy"
+                    allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d0!3d0"></iframe>
+            </div>
+            <p class="mt-3 text-xs text-gray-500">Replace the map embed with your exact location later.</p>
+        </section>
+    </main>
+
+    <footer class="border-t">
+        <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-gray-600 flex items-center justify-between">
+            <p>© <span id="year"></span> Math‑Mate Tuition Centre</p>
+            <p><a href="/pages/privacy.html" class="hover:text-[#11BFA6]">Privacy</a></p>
+        </div>
+    </footer>
+    <script src="../assets/js/site.js" defer></script>
+</body>
+
+</html>
