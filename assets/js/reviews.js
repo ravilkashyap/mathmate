@@ -5,12 +5,8 @@
     const full = Math.round(n||0);
     return '★★★★★'.slice(0, full) + '☆☆☆☆☆'.slice(0, 5-full);
   }
-  fetch('/.netlify/functions/places-reviews').then(r=>r.json()).then(reviews=>{
-    if(!Array.isArray(reviews) || reviews.length===0){
-      wrap.innerHTML = '<div class="text-sm text-gray-500">Reviews will appear after deployment.</div>';
-      return;
-    }
-    reviews.slice(0,10).forEach(r=>{
+  async function renderList(list){
+    list.slice(0,10).forEach(r=>{
       const card = document.createElement('article');
       card.className = 'card review-card';
       const text = (r.text||'').trim();
@@ -28,16 +24,25 @@
       `;
       wrap.appendChild(card);
     });
-
     wrap.addEventListener('click', (e)=>{
       if(e.target.matches('button.btn-link')){
-        const p = e.target.previousElementSibling;
-        const full = p.getAttribute('data-full');
-        p.textContent = full;
-        e.target.remove();
+        const p = e.target.previousElementSibling; const full = p.getAttribute('data-full'); p.textContent = full; e.target.remove();
       }
     });
-  }).catch(()=>{
-    wrap.innerHTML = '<div class="text-sm text-gray-500">Reviews will appear after deployment.</div>';
-  });
+  }
+
+  (async ()=>{
+    try{
+      const r = await fetch('/.netlify/functions/places-reviews', { cache: 'no-store' });
+      const reviews = await r.json();
+      if(Array.isArray(reviews) && reviews.length){ await renderList(reviews); return; }
+    }catch{}
+    // Fallback for local dev
+    try{
+      const r2 = await fetch('/assets/data/reviews.json', { cache: 'no-store' });
+      const local = await r2.json();
+      if(Array.isArray(local) && local.length){ await renderList(local); return; }
+    }catch{}
+    wrap.innerHTML = '<div class="text-sm text-gray-500">No reviews to show yet.</div>';
+  })();
 })();

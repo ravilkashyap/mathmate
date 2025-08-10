@@ -8,12 +8,13 @@ body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,"
 
 /* Buttons */
 .btn-primary,.btn-outline,.btn-coral{font-weight:700;border-radius:.65rem;display:inline-flex;align-items:center;gap:.5rem}
-.btn-primary{background:var(--teal);color:#fff;padding:.7rem 1.1rem}
-.btn-primary:hover{background:var(--teal-dark)}
+.btn-primary{background:var(--teal);color:#fff;padding:.7rem 1.1rem;box-shadow:0 8px 18px rgba(15,182,154,.28)}
+.btn-primary:hover{background:var(--teal-dark);box-shadow:0 10px 24px rgba(15,182,154,.34)}
 .btn-primary:focus{outline:2px solid color-mix(in srgb, var(--teal) 60%, white 40%);outline-offset:2px}
 .btn-outline{border:2px solid var(--teal);color:var(--teal);padding:.6rem 1.1rem}
 .btn-outline:hover{background:color-mix(in srgb, var(--teal) 10%, white)}
-.btn-coral{background:var(--coral);color:#fff;padding:.7rem 1.1rem}
+.btn-coral{background:var(--coral);color:#fff;padding:.7rem 1.1rem;box-shadow:0 8px 18px rgba(226,111,78,.28)}
+.btn-coral:hover{box-shadow:0 10px 24px rgba(226,111,78,.34)}
 .btn-sm{padding:.45rem .85rem;font-size:.9rem}
 .btn-link{color:var(--teal)}
 
@@ -24,7 +25,8 @@ body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,"
 .hero{position:relative;min-height:68vh;overflow:hidden}
 .hero .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:opacity .6s ease;opacity:0}
 .hero .hero-bg.is-active{opacity:1}
-.hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.25) 40%,rgba(0,0,0,0) 70%)}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.65),rgba(0,0,0,.35) 45%,rgba(0,0,0,.08) 75%)}
+.hero .content h1,.hero .content p{ text-shadow:0 2px 6px rgba(0,0,0,.45) }
 .hero .content{position:relative;z-index:2;color:#fff;padding:4rem 1rem}
 .hero .dots{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);display:flex;gap:.4rem;z-index:2}
 .hero .dots button{height:8px;width:8px;border-radius:9999px;background:rgba(255,255,255,.6);border:none}
