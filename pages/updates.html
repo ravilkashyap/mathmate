@@ -237,11 +237,13 @@
                 modal.classList.add('open');
                 modal.setAttribute('aria-hidden', 'false');
                 document.body.style.overflow = 'hidden';
+                if (location.hash.slice(1) !== id) { history.pushState({ u: id }, '', `#${id}`); }
             }
 
             function close() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; if (location.hash) history.replaceState(null, '', location.pathname); }
             document.addEventListener('click', (e) => { if (e.target.hasAttribute('data-modal-close')) close(); if (e.target === modal) close(); });
             document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+            window.addEventListener('popstate', () => { if (!location.hash) { close(); } else { const id = location.hash.slice(1); openModalFor(id); } });
 
             // Hook into existing rendered cards
             window.addEventListener('load', async () => {
