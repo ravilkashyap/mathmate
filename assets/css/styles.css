@@ -1,23 +1,27 @@
 /* Theme */
-:root{--teal:#12b29a;--teal-dark:#0f9f85;--coral:#e0714f;--text:#1f2937;--sand:#ffffff}
+:root{--teal:#0fb69a;--teal-dark:#0b9a83;--coral:#e26f4e;--text:#1f2937;--bg:#ffffff}
 
-/* Typography helpers */
-.font-display{font-family:"Baloo 2", system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif}
-.brand-title{text-shadow:1px 1px 0 rgba(0,0,0,.2)}
+/* Typography */
+body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+.font-display{font-family:"Baloo 2",system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif}
+.brand-title{text-shadow:1px 1px 0 rgba(0,0,0,.15)}
 
 /* Buttons */
-.btn-primary{background:var(--teal);color:#fff;padding:.7rem 1.1rem;border-radius:.65rem;font-weight:700;display:inline-flex;align-items:center;gap:.5rem}
+.btn-primary,.btn-outline,.btn-coral{font-weight:700;border-radius:.65rem;display:inline-flex;align-items:center;gap:.5rem}
+.btn-primary{background:var(--teal);color:#fff;padding:.7rem 1.1rem}
 .btn-primary:hover{background:var(--teal-dark)}
 .btn-primary:focus{outline:2px solid color-mix(in srgb, var(--teal) 60%, white 40%);outline-offset:2px}
-.btn-outline{border:2px solid var(--teal);color:var(--teal);padding:.6rem 1.1rem;border-radius:.65rem;font-weight:700}
+.btn-outline{border:2px solid var(--teal);color:var(--teal);padding:.6rem 1.1rem}
 .btn-outline:hover{background:color-mix(in srgb, var(--teal) 10%, white)}
-.btn-coral{background:var(--coral);color:#fff;padding:.7rem 1.1rem;border-radius:.65rem;font-weight:700}
+.btn-coral{background:var(--coral);color:#fff;padding:.7rem 1.1rem}
+.btn-sm{padding:.45rem .85rem;font-size:.9rem}
+.btn-link{color:var(--teal)}
 
 /* Cards */
 .card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:.9rem;padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 
-/* Hero full-bleed */
-.hero{position:relative;min-height:68vh;border-radius:0;overflow:hidden}
+/* Hero */
+.hero{position:relative;min-height:68vh;overflow:hidden}
 .hero .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:opacity .6s ease;opacity:0}
 .hero .hero-bg.is-active{opacity:1}
 .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.15) 40%,rgba(0,0,0,0) 70%)}
@@ -40,7 +44,7 @@
 .badge-dot{height:.55rem;width:.55rem;border-radius:9999px;background:var(--coral)}
 .cta-banner{background:linear-gradient(90deg,var(--coral),#d66f49);color:#fff;border-radius:1rem}
 
-/* Stats strip */
+/* Stats */
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .stat{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:.9rem;padding:1.25rem;text-align:center}
 .stat .num{font-size:2rem;font-weight:800;color:var(--teal)}
@@ -52,13 +56,29 @@
 .review-card{scroll-snap-align:start;min-width:300px;max-width:360px}
 .stars{color:#f59e0b}
 
-/* Masonry gallery */
+/* Masonry & lightbox */
 .masonry{column-count:1;column-gap:.75rem}
 @media (min-width:640px){.masonry{column-count:2}}
 @media (min-width:1024px){.masonry{column-count:3}}
 .masonry img{width:100%;margin:0 0 .75rem;border-radius:.6rem;display:block}
-
-/* Lightbox */
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:50}
 .lightbox.open{display:flex}
 .lightbox img{max-width:92vw;max-height:92vh;border-radius:.5rem}
+
+/* Utility: visually-hidden (for a11y, not yet used widely) */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Chips active ring utility override for clarity on white */
+.ring-2{box-shadow:0 0 0 2px rgba(15,182,154,.5) inset}
+
+/* Modal (Updates detail) */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;z-index:60}
+.modal.open{display:block}
+.modal .panel{position:absolute;inset:auto auto 0 0;right:0;left:0;top:0;margin:auto;max-width:64rem;max-height:92vh;overflow:auto;background:#fff;border-radius:1rem;box-shadow:0 10px 30px rgba(0,0,0,.25);border:1px solid rgba(0,0,0,.08)}
+@media (min-width:768px){.modal .panel{top:5vh;}}
+.modal .close{position:sticky;top:0;display:flex;justify-content:flex-end;padding:.5rem;background:linear-gradient(#fff,rgba(255,255,255,.9));z-index:2}
+.modal .close button{height:44px;width:44px;border-radius:.6rem;border:1px solid rgba(0,0,0,.12);background:#fff;font-size:20px;line-height:1}
+.media-banner{position:relative}
+.media-banner .badge{position:absolute;bottom:.5rem;left:.5rem}
+.thumb-row{display:flex;gap:.5rem;overflow-x:auto;padding:.5rem}
+.thumb-row img{height:72px;width:96px;object-fit:cover;border-radius:.4rem;border:1px solid rgba(0,0,0,.08)}

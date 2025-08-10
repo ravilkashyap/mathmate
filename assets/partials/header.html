@@ -4,14 +4,42 @@
             <img src="/assets/img/logo.svg" alt="Math‑Mate logo" class="h-10 w-10" />
             <span class="text-2xl font-display brand-title">Math‑Mate</span>
         </a>
+        <!-- Desktop nav -->
         <div class="hidden md:flex items-center gap-4">
+            <a class="hover:text-[--teal]" href="/">Home</a>
             <a class="hover:text-[--teal]" href="/pages/gallery.html">Gallery</a>
             <a class="hover:text-[--teal]" href="/pages/updates.html">Updates</a>
-            <a class="hover:text-[--teal]" href="/pages/method.html">Method</a>
+            <a class="hover:text-[--teal]" href="/pages/about.html">About</a>
             <a class="hover:text-[--teal]" href="/pages/reviews.html">Reviews</a>
-            <a class="btn-outline" href="/pages/contact.html">Contact</a>
-            <a class="btn-coral" href="tel:+919448500475">Call</a>
-            <a class="btn-primary" href="https://wa.me/919448500475" target="_blank" rel="noopener">WhatsApp</a>
+            <div class="flex items-center gap-2">
+                <a class="btn-outline btn-sm" href="/pages/contact.html">Contact</a>
+                <a class="btn-coral btn-sm" href="tel:+919448500475">Call</a>
+                <a class="btn-primary btn-sm" href="https://wa.me/919448500475" target="_blank"
+                    rel="noopener noreferrer">WhatsApp</a>
+            </div>
         </div>
+        <!-- Mobile trigger -->
+        <button class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-lg border"
+            aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false" data-menu-toggle>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+                <path d="M3.75 5.25h16.5v1.5H3.75v-1.5Zm0 6h16.5v1.5H3.75v-1.5Zm0 6h16.5v1.5H3.75v-1.5Z" />
+            </svg>
+        </button>
     </nav>
+    <!-- Mobile menu -->
+    <div id="mobileNav" class="md:hidden hidden border-t bg-white/95 backdrop-blur">
+        <div class="mx-auto max-w-7xl px-4 py-3 grid gap-3">
+            <a class="py-2" href="/">Home</a>
+            <a class="py-2" href="/pages/gallery.html">Gallery</a>
+            <a class="py-2" href="/pages/updates.html">Updates</a>
+            <a class="py-2" href="/pages/about.html">About</a>
+            <a class="py-2" href="/pages/reviews.html">Reviews</a>
+            <div class="flex flex-wrap items-center gap-2 pt-2">
+                <a class="btn-outline btn-sm" href="/pages/contact.html">Contact</a>
+                <a class="btn-coral btn-sm" href="tel:+919448500475">Call</a>
+                <a class="btn-primary btn-sm" href="https://wa.me/919448500475" target="_blank"
+                    rel="noopener noreferrer">WhatsApp</a>
+            </div>
+        </div>
+    </div>
 </header>

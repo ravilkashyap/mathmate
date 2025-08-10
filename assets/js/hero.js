@@ -49,7 +49,12 @@
   hero.addEventListener('mouseleave', ()=> isHover = false);
   hero.tabIndex = 0;
   hero.addEventListener('keydown', e=>{ if(e.key==='ArrowRight') next(); if(e.key==='ArrowLeft') go(index-1); });
-  function auto(){ clearInterval(timer); timer = setInterval(()=>{ if(!isHover) next(); }, 5000); }
+  function auto(){
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduce) return;
+    clearInterval(timer);
+    timer = setInterval(()=>{ if(!isHover) next(); }, 5000);
+  }
 
   loadImages().then(render);
 })();

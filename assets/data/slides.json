@@ -1,20 +1,20 @@
 [
-  {
-    "image": "/assets/img/gallery/media-AF1QipM170EvRcfF32opX_FynWjWIkmG5FKMSCPR.jpeg",
-    "title": "From our classes",
-    "description": "",
-    "link": "/pages/updates.html"
-  },
-  {
-    "image": "/assets/img/gallery/media-AF1QipM1GE7qj8h4qh9qYxHk0P_sJFdY6AqZ_Ka1.jpeg",
-    "title": "From our classes",
-    "description": "",
-    "link": "/pages/updates.html"
-  },
-  {
-    "image": "/assets/img/gallery/media-AF1QipM4KXevqYpIT1lvRJUwvoMejsO7hqazmARQ.jpeg",
-    "title": "From our classes",
-    "description": "",
-    "link": "/pages/updates.html"
-  }
+    {
+        "image": "/assets/img/gallery/media-AF1QipNmfFiVihyIjD1ZhwZBMK-DFoJ7VGRUiN-n.jpeg",
+        "title": "Learning together",
+        "description": "",
+        "link": "/pages/updates.html"
+    },
+    {
+        "image": "/assets/img/gallery/media-AF1QipPQyD2tjq_pXqkTizv7tpmlIl5rGaRUmbOL.jpeg",
+        "title": "Practice & performance",
+        "description": "",
+        "link": "/pages/updates.html"
+    },
+    {
+        "image": "/assets/img/gallery/media-AF1QipOECv_bDwfFi80CjRYpX51Zluxco0_89REk.jpeg",
+        "title": "Hands-on learning",
+        "description": "",
+        "link": "/pages/updates.html"
+    }
 ]

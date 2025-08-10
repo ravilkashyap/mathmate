@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Math‑Mate Tuition Centre</title>
     <meta name="description"
-        content="Personalised maths coaching for Classes 8–12 (ICSE, CBSE, State). Concept clarity, practice, and performance." />
-    <link rel="canonical" href="https://example.com/" />
+        content="Personalised maths coaching in Yelahanka, Bengaluru for Classes 8–12 (ICSE, CBSE, State). Concept clarity, practice, and performance." />
+    <link rel="canonical" href="/" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Baloo+2:wght@600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <meta name="theme-color" content="#12b29a" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Math‑Mate Tuition Centre" />
+    <meta property="og:description"
+        content="Personalised maths coaching in Yelahanka, Bengaluru for Classes 8–12 (ICSE, CBSE, State)." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/assets/img/logo.svg" />
+    <meta name="twitter:card" content="summary" />
 </head>
 
 <body class="min-h-screen flex flex-col bg-white text-[--text]">
@@ -29,13 +39,14 @@
             <div class="content">
                 <div class="mx-auto max-w-7xl px-4">
                     <p class="badge"><span class="badge-dot"></span><span>Classes 8–12 • ICSE • CBSE • State</span></p>
-                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-3">Make maths your strong subject</h1>
-                    <p class="mt-4 text-lg text-white/90 max-w-2xl">Concept clarity, steady practice, chapter tests, and feedback—so exams feel easier and scores go up.</p>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-3">Make maths your strong subject
+                    </h1>
+                    <p class="mt-4 text-lg text-white/90 max-w-2xl">Yelahanka, Bengaluru · Concept clarity, steady
+                        practice, chapter tests, and feedback—so exams feel easier and scores go up.</p>
                     <div class="mt-6 flex flex-wrap gap-3">
                         <a href="/pages/updates.html" class="btn-outline">See updates →</a>
                         <a href="/pages/gallery.html" class="btn-outline">View gallery →</a>
-                        <a href="tel:+919448500475" class="btn-coral">Call now</a>
-                        <a href="https://wa.me/919448500475" class="btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+                        <a href="/pages/contact.html" class="btn-primary">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -47,15 +58,15 @@
             <div class="stats">
                 <div class="stat">
                     <div class="num">10+ yrs</div>
-                    <div class="label">Teaching experience</div>
+                    <div class="label">Experience teaching maths</div>
                 </div>
                 <div class="stat">
-                    <div class="num">15%</div>
-                    <div class="label">Average score lift</div>
+                    <div class="num">Small</div>
+                    <div class="label">Batches for attention</div>
                 </div>
                 <div class="stat">
-                    <div class="num">99%</div>
-                    <div class="label">Best student score</div>
+                    <div class="num">Tests</div>
+                    <div class="label">Chapter‑wise assessments</div>
                 </div>
             </div>
         </section>
@@ -94,7 +105,7 @@
         <!-- Updates cards section -->
         <section class="mx-auto max-w-7xl px-4 py-8">
             <div class="flex items-end justify-between gap-4">
-                <h2 class="text-3xl font-semibold">Updates</h2>
+                <h2 class="text-3xl font-semibold">Latest at Math‑Mate</h2>
                 <a class="btn-link text-sm" href="/pages/updates.html">View all →</a>
             </div>
             <div id="storiesGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
@@ -103,7 +114,7 @@
         <!-- Gallery masonry + lightbox -->
         <section class="mx-auto max-w-7xl px-4 py-10">
             <div class="flex items-end justify-between gap-4">
-                <h2 class="text-3xl font-semibold">Gallery</h2>
+                <h2 class="text-3xl font-semibold">Gallery Highlights</h2>
                 <a class="btn-link text-sm" href="/pages/gallery.html">Open gallery →</a>
             </div>
             <div id="galleryMasonry" class="masonry mt-6"></div>
@@ -120,7 +131,7 @@
                 <div class="flex gap-3">
                     <a href="tel:+919448500475" class="btn-primary bg-white !text-[#1F2937]"
                         style="border:2px solid #fff">Call now</a>
-                    <a href="https://wa.me/919448500475" target="_blank" rel="noopener" class="btn-outline"
+                    <a href="https://wa.me/919448500475" target="_blank" rel="noopener noreferrer" class="btn-outline"
                         style="border-color:#fff;color:#fff">WhatsApp</a>
                 </div>
             </div>
@@ -137,6 +148,19 @@
     <script src="assets/js/gallery-ux.js" defer></script>
     <script src="assets/js/gallery.js" defer></script>
     <script src="assets/js/stories.js" defer></script>
+    <script>
+        // Preload first hero image to improve LCP
+        (async function () {
+            try {
+                const res = await fetch('/assets/data/slides.json', { cache: 'no-store' });
+                const data = await res.json();
+                const first = Array.isArray(data) && data[0]?.image;
+                const link = document.createElement('link');
+                link.rel = 'preload'; link.as = 'image'; link.href = first || 'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=2000&auto=format&fit=crop';
+                document.head.appendChild(link);
+            } catch { }
+        })();
+    </script>
 </body>
 
 </html>

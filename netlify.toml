@@ -6,3 +6,8 @@
   from = "/.netlify/functions/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+[[redirects]]
+  from = "/contact-success"
+  to = "/pages/contact.html#success"
+  status = 301

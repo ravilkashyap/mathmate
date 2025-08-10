@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://example.com/sitemap.xml
+# Update with your domain at deploy time
+Sitemap: /sitemap.xml

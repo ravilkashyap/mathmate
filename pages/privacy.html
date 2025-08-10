@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy — Math‑Mate</title>
+    <meta name="description"
+        content="Privacy policy for Math‑Mate Tuition Centre. What we collect and how we use your data." />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link
@@ -20,6 +22,12 @@
         <p class="mt-4 text-gray-600">If analytics are enabled later, we will update this page.</p>
         <p class="mt-10"><a class="btn-link" href="/">← Back to Home</a></p>
     </main>
+    <footer class="border-t">
+        <div class="mx-auto max-w-7xl px-4 py-8 text-sm text-gray-600">© <span id="year"></span> Math‑Mate</div>
+    </footer>
+    <script>
+        const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://example.com/</loc></url>
-  <url><loc>https://example.com/pages/courses.html</loc></url>
-  <url><loc>https://example.com/pages/method.html</loc></url>
-  <url><loc>https://example.com/pages/reviews.html</loc></url>
-  <url><loc>https://example.com/pages/about.html</loc></url>
-  <url><loc>https://example.com/pages/contact.html</loc></url>
+  <url><loc>/</loc></url>
+  <url><loc>/pages/courses.html</loc></url>
+  <url><loc>/pages/method.html</loc></url>
+  <url><loc>/pages/reviews.html</loc></url>
+  <url><loc>/pages/about.html</loc></url>
+  <url><loc>/pages/contact.html</loc></url>
+  <url><loc>/pages/gallery.html</loc></url>
+  <url><loc>/pages/updates.html</loc></url>
 </urlset>

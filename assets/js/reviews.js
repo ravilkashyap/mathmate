@@ -17,7 +17,7 @@
       const short = text.length>180 ? text.slice(0,180)+'…' : text;
       card.innerHTML = `
         <div class="flex items-center gap-2">
-          <div class="h-8 w-8 rounded-full overflow-hidden bg-gray-200">${r.profile_photo_url?`<img src="${r.profile_photo_url}" alt="${r.author_name}" class="h-full w-full object-cover">`:''}</div>
+          <div class="h-8 w-8 rounded-full overflow-hidden bg-gray-200">${r.profile_photo_url?`<img src="${r.profile_photo_url}" alt="${r.author_name||'Reviewer'} profile photo" class="h-full w-full object-cover" loading="lazy">`:''}</div>
           <div>
             <div class="font-semibold">${r.author_name||'Reviewer'}</div>
             <div class="stars text-sm">${starText(r.rating)}</div>

@@ -14,19 +14,35 @@ def find_media(root: Path) -> List[Path]:
 
 def find_post_json(root: Path) -> List[Path]:
     names = {"posts.json", "posts.jsonl", "LocalPosts.json", "Posts.json"}
-    files = []
+    files: List[Path] = []
     for p in root.rglob("*.json"):
-        if p.name in names or "post" in p.name.lower():
+        pn = p.name.lower()
+        pp = p.as_posix().lower()
+        if p.name in names or "post" in pn or "/localpost-" in pp:
             files.append(p)
     for p in root.rglob("*.jsonl"):
         files.append(p)
     return files
 
 
-def load_posts(json_paths: List[Path]) -> List[Dict]:
+def load_posts(json_paths: List[Path], src_root: Path) -> List[Dict]:
     posts: List[Dict] = []
     for p in json_paths:
         try:
+            # Handle localPost-*/data.json specially to capture siblings
+            if p.parent.name.lower().startswith("localpost-") and p.name == "data.json":
+                data = json.loads(p.read_text(encoding="utf-8", errors="ignore"))
+                text = (data.get("summary") or data.get("text") or data.get("body") or data.get("caption") or "").strip()
+                date = data.get("updateTime") or data.get("createTime") or ""
+                # collect sibling media in same folder
+                media = []
+                for m in p.parent.iterdir():
+                    if m.is_file() and m.suffix.lower() in IMAGE_EXTS.union(VIDEO_EXTS):
+                        rel = m.relative_to(src_root)
+                        media.append(rel.as_posix())
+                posts.append({"title": data.get("topic") or data.get("headline") or "Update", "text": text, "time": date, "media": media})
+                continue
+
             if p.suffix.lower() == ".jsonl":
                 for line in p.read_text(encoding="utf-8", errors="ignore").splitlines():
                     if not line.strip():
@@ -71,7 +87,7 @@ def main():
     # Copy ALL media to gallery
     media = find_media(src)
     gallery_items = []
-    for p in sorted(media, key=lambda x: x.name.lower()):
+    for p in sorted(media, key=lambda x: (x.suffix.lower() not in IMAGE_EXTS, x.name.lower())):
         dest = gallery_dir / p.name
         try:
             if dest.resolve() != p.resolve():
@@ -85,11 +101,10 @@ def main():
 
     # Build updates.json with detailed text + media
     posts_paths = find_post_json(src)
-    posts = load_posts(posts_paths)
+    posts = load_posts(posts_paths, src)
 
     updates = []
     for i, post in enumerate(posts, 1):
-        # Heuristic fields
         title = (post.get("title") or post.get("summary") or post.get("headline") or f"Update #{i}")
         text = (post.get("text") or post.get("body") or post.get("caption") or post.get("summary") or "").strip()
         date = (post.get("time") or post.get("createTime") or post.get("updateTime") or "")
@@ -100,7 +115,6 @@ def main():
             if isinstance(val, list):
                 raw_media = val
                 break
-        # Normalize media
         for m in raw_media:
             try:
                 mp = Path(m)
@@ -117,12 +131,12 @@ def main():
             except Exception:
                 continue
         updates.append({
+            "id": f"u-{i}",
             "title": title,
             "date": date,
             "excerpt": text[:160],
             "text": text,
-            "media": media_list,
-            "link": ""  # optional
+            "media": media_list
         })
 
     (data_dir / "updates.json").write_text(json.dumps(updates, indent=2))
