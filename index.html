@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Math‑Mate Tuition Centre</title>
     <meta name="description"
-        content="Math tuition for Classes 8–12 across ICSE, CBSE, and State syllabi. Individual attention, concept‑based teaching, regular tests." />
+        content="Personalised maths coaching for Classes 8–12 (ICSE, CBSE, State). Concept clarity, practice, and performance." />
     <link rel="canonical" href="https://example.com/" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,154 +17,127 @@
     <meta name="theme-color" content="#12b29a" />
 </head>
 
-<body class="bg-white text-[--text]">
-    <!-- Nav -->
-    <header class="sticky top-0 z-20 bg-white/90 backdrop-blur border-b">
-        <nav class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3">
-                <img src="/assets/img/logo.svg" alt="Math‑Mate logo" class="h-10 w-10" />
-                <span class="text-2xl font-display brand-title">Math‑Mate</span>
-            </a>
-            <div class="hidden md:flex items-center gap-4">
-                <a class="hover:text-[--teal]" href="/pages/courses.html">Courses</a>
-                <a class="hover:text-[--teal]" href="/pages/method.html">Method</a>
-                <a class="hover:text-[--teal]" href="/pages/reviews.html">Reviews</a>
-                <a class="hover:text-[--teal]" href="/pages/about.html">About</a>
-                <a class="btn-outline" href="/pages/contact.html">Contact</a>
-                <a class="btn-coral" href="tel:+919448500475">Call</a>
-                <a class="btn-primary" href="https://wa.me/919448500475" target="_blank" rel="noopener">WhatsApp</a>
-            </div>
-        </nav>
-    </header>
+<body class="min-h-screen flex flex-col bg-white text-[--text]">
+    <!-- Nav (shared) -->
+    <header data-shared></header>
 
-    <!-- Full-bleed hero with background slides -->
-    <section id="hero" class="hero">
-        <div class="bg-wrap"></div>
-        <div class="overlay"></div>
-        <div class="content">
-            <div class="mx-auto max-w-7xl px-4">
-                <p class="badge"><span class="badge-dot"></span><span>Classes 8–12 • ICSE • CBSE • State</span></p>
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-3">Confident Maths, Clear Concepts</h1>
-                <p class="mt-4 text-lg text-white/90 max-w-2xl">Small batches, concept‑based teaching, chapter‑wise
-                    tests, and regular feedback.</p>
-                <div class="mt-6 flex flex-wrap gap-3">
-                    <a href="tel:+919448500475" class="btn-coral">Call Now</a>
-                    <a href="https://wa.me/919448500475" class="btn-primary" target="_blank" rel="noopener">WhatsApp</a>
-                    <a href="/pages/contact.html" class="btn-outline">Contact Form →</a>
+    <main class="flex-1">
+        <!-- Full-bleed hero with background slides -->
+        <section id="hero" class="hero">
+            <div class="bg-wrap"></div>
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="mx-auto max-w-7xl px-4">
+                    <p class="badge"><span class="badge-dot"></span><span>Classes 8–12 • ICSE • CBSE • State</span></p>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-3">Make maths your strong subject
+                    </h1>
+                    <p class="mt-4 text-lg text-white/90 max-w-2xl">We focus on concept clarity, steady practice, and
+                        timely feedback—so exams feel easier and scores go up.</p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="tel:+919448500475" class="btn-coral">Talk to the tutor</a>
+                        <a href="https://wa.me/919448500475" class="btn-primary" target="_blank" rel="noopener">WhatsApp
+                            a query</a>
+                        <a href="/pages/contact.html" class="btn-outline">Book a demo →</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="dots"></div>
-    </section>
+            <div class="dots"></div>
+        </section>
 
-    <!-- Stats strip -->
-    <section class="mx-auto max-w-7xl px-4 py-10">
-        <div class="stats">
-            <div class="stat">
-                <div class="num">10+ yrs</div>
-                <div class="label">Experience</div>
+        <!-- Stats strip -->
+        <section class="mx-auto max-w-7xl px-4 py-10">
+            <div class="stats">
+                <div class="stat">
+                    <div class="num">10+ yrs</div>
+                    <div class="label">Teaching experience</div>
+                </div>
+                <div class="stat">
+                    <div class="num">15%</div>
+                    <div class="label">Average score lift</div>
+                </div>
+                <div class="stat">
+                    <div class="num">99%</div>
+                    <div class="label">Best student score</div>
+                </div>
             </div>
-            <div class="stat">
-                <div class="num">15%</div>
-                <div class="label">Avg score jump</div>
-            </div>
-            <div class="stat">
-                <div class="num">99%</div>
-                <div class="label">Top student score</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stories cards section -->
-    <section class="mx-auto max-w-7xl px-4 py-8">
-        <div class="flex items-end justify-between gap-4">
-            <h2 class="text-3xl font-semibold">Stories</h2>
-            <a class="btn-link text-sm" href="/pages/stories.html">View all →</a>
-        </div>
-        <div id="storiesGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-    </section>
+        <!-- Updates cards section -->
+        <section class="mx-auto max-w-7xl px-4 py-8">
+            <h2 class="text-3xl font-semibold">How we help</h2>
+            <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <div class="font-semibold">Build intuition first</div>
+                    <p class="text-sm text-gray-600 mt-1">Start with ideas and visuals before formulas.</p>
+                </div>
+                <div class="card">
+                    <div class="font-semibold">Personal attention</div>
+                    <p class="text-sm text-gray-600 mt-1">Small batches so every doubt gets time.</p>
+                </div>
+                <div class="card">
+                    <div class="font-semibold">Concept → Practice</div>
+                    <p class="text-sm text-gray-600 mt-1">Structured problem sets after each concept.</p>
+                </div>
+                <div class="card">
+                    <div class="font-semibold">Chapter tests</div>
+                    <p class="text-sm text-gray-600 mt-1">Frequent checks to avoid last‑minute stress.</p>
+                </div>
+                <div class="card">
+                    <div class="font-semibold">Parent feedback</div>
+                    <p class="text-sm text-gray-600 mt-1">Clear progress updates and next steps.</p>
+                </div>
+                <div class="card">
+                    <div class="font-semibold">Exam strategy</div>
+                    <p class="text-sm text-gray-600 mt-1">Speed, accuracy, and attempt planning.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Benefits with simple icons -->
-    <section class="mx-auto max-w-7xl px-4 py-8">
-        <h2 class="text-3xl font-semibold">Why Math‑Mate</h2>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="card">
-                <div class="font-semibold">Constructive Approach</div>
-                <p class="text-sm text-gray-600 mt-1">Build intuition before abstraction.</p>
+        <!-- Updates cards section -->
+        <section class="mx-auto max-w-7xl px-4 py-8">
+            <div class="flex items-end justify-between gap-4">
+                <h2 class="text-3xl font-semibold">Updates</h2>
+                <a class="btn-link text-sm" href="/pages/stories.html">View all →</a>
             </div>
-            <div class="card">
-                <div class="font-semibold">Individual Attention</div>
-                <p class="text-sm text-gray-600 mt-1">Small batches, tracked progress.</p>
-            </div>
-            <div class="card">
-                <div class="font-semibold">Concept‑Based Teaching</div>
-                <p class="text-sm text-gray-600 mt-1">Clear explanations, no rote learning.</p>
-            </div>
-            <div class="card">
-                <div class="font-semibold">Chapter‑wise Tests</div>
-                <p class="text-sm text-gray-600 mt-1">Practice and timely revision.</p>
-            </div>
-            <div class="card">
-                <div class="font-semibold">Regular Feedback</div>
-                <p class="text-sm text-gray-600 mt-1">Parent updates and guidance.</p>
-            </div>
-            <div class="card">
-                <div class="font-semibold">Doubt Sessions</div>
-                <p class="text-sm text-gray-600 mt-1">Weekly doubt clearing.</p>
-            </div>
-        </div>
-    </section>
+            <div id="storiesGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
 
-    <!-- From Google (Reviews) slider -->
-    <section class="mx-auto max-w-7xl px-4 py-10">
-        <div class="flex items-end justify-between gap-4">
-            <h2 class="text-3xl font-semibold">From Google (Reviews)</h2>
-            <a class="btn-link text-sm" href="https://maps.app.goo.gl/Ahsbe9P5gr5eTCay7" target="_blank"
-                rel="noopener">View on Google →</a>
-        </div>
-        <div id="homeGmapsReviews" class="review-strip mt-6"></div>
-    </section>
+        <!-- From Google (Reviews) slider -->
+        <section class="mx-auto max-w-7xl px-4 py-10">
+            <div class="flex items-end justify-between gap-4">
+                <h2 class="text-3xl font-semibold">From Google (Reviews)</h2>
+                <a class="btn-link text-sm" href="https://maps.app.goo.gl/Ahsbe9P5gr5eTCay7" target="_blank"
+                    rel="noopener">See all on Google →</a>
+            </div>
+            <div id="homeGmapsReviews" class="review-strip mt-6"></div>
+        </section>
 
-    <!-- Gallery masonry + lightbox -->
-    <section class="mx-auto max-w-7xl px-4 py-10">
-        <h2 class="text-3xl font-semibold">Gallery</h2>
-        <div id="galleryMasonry" class="masonry mt-6"></div>
-        <div id="lightbox" class="lightbox"><img alt="" /></div>
-    </section>
+        <!-- Gallery masonry + lightbox -->
+        <section class="mx-auto max-w-7xl px-4 py-10">
+            <h2 class="text-3xl font-semibold">Gallery</h2>
+            <div id="galleryMasonry" class="masonry mt-6"></div>
+            <div id="lightbox" class="lightbox"><img alt="" /></div>
+        </section>
 
-    <!-- CTA banner -->
-    <section class="mx-auto max-w-7xl px-4 pb-20">
-        <div class="cta-banner p-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div>
-                <h3 class="text-2xl font-semibold">Ready to improve your maths score?</h3>
-                <p class="opacity-90">Talk to us for batch timings and a free first session.</p>
+        <!-- CTA banner -->
+        <section class="mx-auto max-w-7xl px-4 pb-20">
+            <div class="cta-banner p-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-2xl font-semibold">Let’s make maths simpler</h3>
+                    <p class="opacity-90">Call or message—get the batch details and a free first session.</p>
+                </div>
+                <div class="flex gap-3">
+                    <a href="tel:+919448500475" class="btn-primary bg-white !text-[#1F2937]"
+                        style="border:2px solid #fff">Call now</a>
+                    <a href="https://wa.me/919448500475" target="_blank" rel="noopener" class="btn-outline"
+                        style="border-color:#fff;color:#fff">WhatsApp</a>
+                </div>
             </div>
-            <div class="flex gap-3">
-                <a href="tel:+919448500475" class="btn-primary bg-white !text-[#1F2937]"
-                    style="border:2px solid #fff">Call</a>
-                <a href="https://wa.me/919448500475" target="_blank" rel="noopener" class="btn-outline"
-                    style="border-color:#fff;color:#fff">WhatsApp</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="border-t">
-        <div class="mx-auto max-w-7xl px-4 py-10 text-sm text-gray-600 grid md:grid-cols-2 gap-6">
-            <div>
-                <div class="font-semibold">Math‑Mate Tuition Centre</div>
-                <div>Phone: <a class="btn-link" href="tel:+919448500475">+91 94485 00475</a></div>
-                <div>WhatsApp: <a class="btn-link" href="https://wa.me/919448500475" target="_blank"
-                        rel="noopener">Chat</a></div>
-            </div>
-            <div class="md:text-right">
-                <a class="btn-link" href="/pages/courses.html">Courses</a> ·
-                <a class="btn-link" href="/pages/method.html">Method</a> ·
-                <a class="btn-link" href="/pages/contact.html">Contact</a>
-                <div class="mt-2"><a class="hover:text-[--teal]" href="/pages/privacy.html">Privacy</a></div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer (shared) -->
+    <footer data-shared></footer>
 
     <!-- Scripts -->
     <script src="assets/js/hero.js" defer></script>
