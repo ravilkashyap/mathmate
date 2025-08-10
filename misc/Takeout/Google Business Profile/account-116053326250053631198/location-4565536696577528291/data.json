@@ -1,0 +1,178 @@
+{
+  "name": "locations/4565536696577528291",
+  "languageCode": "en",
+  "title": "Math-Mate Tuition Centre",
+  "phoneNumbers": {
+    "primaryPhone": "094485 00475"
+  },
+  "categories": {
+    "primaryCategory": {
+      "name": "categories/gcid:private_tutor",
+      "displayName": "Private Tutor",
+      "moreHoursTypes": [{
+        "hoursTypeId": "ACCESS",
+        "displayName": "Access",
+        "localizedDisplayName": "Access"
+      }, {
+        "hoursTypeId": "BREAKFAST",
+        "displayName": "Breakfast",
+        "localizedDisplayName": "Breakfast"
+      }, {
+        "hoursTypeId": "BRUNCH",
+        "displayName": "Brunch",
+        "localizedDisplayName": "Brunch"
+      }, {
+        "hoursTypeId": "DELIVERY",
+        "displayName": "Delivery",
+        "localizedDisplayName": "Delivery"
+      }, {
+        "hoursTypeId": "DINNER",
+        "displayName": "Dinner",
+        "localizedDisplayName": "Dinner"
+      }, {
+        "hoursTypeId": "DRIVE_THROUGH",
+        "displayName": "Drive through",
+        "localizedDisplayName": "Drive through"
+      }, {
+        "hoursTypeId": "HAPPY_HOUR",
+        "displayName": "Happy hours",
+        "localizedDisplayName": "Happy hours"
+      }, {
+        "hoursTypeId": "KITCHEN",
+        "displayName": "Kitchen",
+        "localizedDisplayName": "Kitchen"
+      }, {
+        "hoursTypeId": "LUNCH",
+        "displayName": "Lunch",
+        "localizedDisplayName": "Lunch"
+      }, {
+        "hoursTypeId": "ONLINE_SERVICE_HOURS",
+        "displayName": "Online service hours",
+        "localizedDisplayName": "Online service hours"
+      }, {
+        "hoursTypeId": "PICKUP",
+        "displayName": "Pickup",
+        "localizedDisplayName": "Pickup"
+      }, {
+        "hoursTypeId": "TAKEOUT",
+        "displayName": "Takeout",
+        "localizedDisplayName": "Takeout"
+      }, {
+        "hoursTypeId": "SENIOR_HOURS",
+        "displayName": "Senior hours",
+        "localizedDisplayName": "Senior hours"
+      }]
+    }
+  },
+  "storefrontAddress": {
+    "regionCode": "IN",
+    "languageCode": "en",
+    "postalCode": "560065",
+    "administrativeArea": "Karnataka",
+    "locality": "Bengaluru",
+    "addressLines": ["426, 21st main, Judicial Layout", "GKVK Post"]
+  },
+  "regularHours": {
+    "periods": [{
+      "openDay": "MONDAY",
+      "openTime": {
+        "hours": 16,
+        "minutes": 30
+      },
+      "closeDay": "MONDAY",
+      "closeTime": {
+        "hours": 21,
+        "minutes": 30
+      }
+    }, {
+      "openDay": "TUESDAY",
+      "openTime": {
+        "hours": 16,
+        "minutes": 30
+      },
+      "closeDay": "TUESDAY",
+      "closeTime": {
+        "hours": 21,
+        "minutes": 30
+      }
+    }, {
+      "openDay": "WEDNESDAY",
+      "openTime": {
+        "hours": 16,
+        "minutes": 30
+      },
+      "closeDay": "WEDNESDAY",
+      "closeTime": {
+        "hours": 21,
+        "minutes": 30
+      }
+    }, {
+      "openDay": "THURSDAY",
+      "openTime": {
+        "hours": 16,
+        "minutes": 30
+      },
+      "closeDay": "THURSDAY",
+      "closeTime": {
+        "hours": 21,
+        "minutes": 30
+      }
+    }, {
+      "openDay": "FRIDAY",
+      "openTime": {
+        "hours": 16,
+        "minutes": 30
+      },
+      "closeDay": "FRIDAY",
+      "closeTime": {
+        "hours": 21,
+        "minutes": 30
+      }
+    }]
+  },
+  "specialHours": {
+  },
+  "serviceArea": {
+    "businessType": "CUSTOMER_AND_BUSINESS_LOCATION",
+    "places": {
+      "placeInfos": [{
+        "placeName": "Yelahanka, Bengaluru, Karnataka, India",
+        "placeId": "ChIJ1dI391YYrjsRL5RdGCCN974"
+      }, {
+        "placeName": "Yelahanka New Town, Bengaluru, Karnataka, India",
+        "placeId": "ChIJXc_ZXWAYrjsRuzsIhmTpHBs"
+      }, {
+        "placeName": "Judicial Layout, Yelahanka, Bengaluru, Karnataka 560065, India",
+        "placeId": "ChIJSW3uvEEYrjsR_N93hnNt5Vc"
+      }, {
+        "placeName": "4th Phase, Yelahanka New Town, Bengaluru, Karnataka 560064, India",
+        "placeId": "ChIJ3zA8OokYrjsRrQgWqeUZgZQ"
+      }]
+    },
+    "regionCode": "IN"
+  },
+  "adWordsLocationExtensions": {
+  },
+  "latlng": {
+    "latitude": 13.0875043,
+    "longitude": 77.5821306
+  },
+  "openInfo": {
+    "status": "OPEN",
+    "canReopen": true,
+    "openingDate": {
+      "year": 2016,
+      "month": 7
+    }
+  },
+  "metadata": {
+    "placeId": "ChIJT2CxqWkYrjsRvAaxTHyGPXg"
+  },
+  "profile": {
+    "description": "A mathematics tuition where highly effective simplified learning methodology is applied in interactive studies where the following are provided.\n- Constructive Approach\n- Individual Attention\n- Concept Based Teaching\n- Chapter-wise Test\n- Regular Feedback\n- Counseling"
+  },
+  "relationshipData": {
+    "parentLocation": {
+    }
+  }
+}

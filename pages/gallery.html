@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery — Math‑Mate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col bg-white text-[#1F2937]">
+    <header data-shared></header>
+
+    <main class="flex-1 mx-auto max-w-7xl px-4 py-10">
+        <h1 class="text-4xl font-bold">Gallery</h1>
+        <p class="mt-2 text-gray-600">Photos and videos from our classes and events.</p>
+        <div id="galleryMasonry" class="masonry mt-6"></div>
+        <div id="lightbox" class="lightbox"><img alt="" /></div>
+    </main>
+
+    <footer data-shared></footer>
+    <script src="../assets/js/site.js" defer></script>
+    <script>
+        (async function () {
+            const masonry = document.getElementById('galleryMasonry');
+            const lb = document.getElementById('lightbox');
+            const lbImg = lb.querySelector('img');
+            const res = await fetch('../assets/data/gallery.json', { cache: 'no-store' });
+            const items = await res.json();
+            items.forEach(it => {
+                if (it.type === 'video') {
+                    const v = document.createElement('video');
+                    v.src = it.src; v.controls = true; v.className = 'w-full rounded mb-3';
+                    masonry.appendChild(v);
+                } else {
+                    const img = document.createElement('img');
+                    img.src = it.src; img.alt = ''; img.loading = 'lazy'; img.className = 'w-full rounded';
+                    masonry.appendChild(img);
+                }
+            });
+            document.addEventListener('click', (e) => {
+                if (e.target.closest('#galleryMasonry img')) { lbImg.src = e.target.src; lb.classList.add('open'); }
+                if (e.target === lb) { lb.classList.remove('open'); lbImg.src = ''; }
+            });
+        })();
+    </script>
+</body>
+
+</html>

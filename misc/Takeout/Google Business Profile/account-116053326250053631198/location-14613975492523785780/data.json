@@ -1,0 +1,165 @@
+{
+  "name": "locations/14613975492523785780",
+  "languageCode": "en",
+  "title": "Ninada School of Music",
+  "phoneNumbers": {
+    "primaryPhone": "094485 00475"
+  },
+  "categories": {
+    "primaryCategory": {
+      "name": "categories/gcid:music_school",
+      "displayName": "Music school",
+      "serviceTypes": [{
+        "serviceTypeId": "job_type_id:adult_lessons",
+        "displayName": "Adult lessons"
+      }, {
+        "serviceTypeId": "job_type_id:advanced_classes",
+        "displayName": "Advanced classes"
+      }, {
+        "serviceTypeId": "job_type_id:beginners_classes",
+        "displayName": "Beginner\u0027s classes"
+      }, {
+        "serviceTypeId": "job_type_id:cello",
+        "displayName": "Cello"
+      }, {
+        "serviceTypeId": "job_type_id:choir",
+        "displayName": "Choir"
+      }, {
+        "serviceTypeId": "job_type_id:clarinet",
+        "displayName": "Clarinet"
+      }, {
+        "serviceTypeId": "job_type_id:dj",
+        "displayName": "Emcee \u0026 DJ services"
+      }, {
+        "serviceTypeId": "job_type_id:drum_lessons",
+        "displayName": "Drum Lessons"
+      }, {
+        "serviceTypeId": "job_type_id:flute",
+        "displayName": "Flute"
+      }, {
+        "serviceTypeId": "job_type_id:guitar_lessons",
+        "displayName": "Guitar lessons"
+      }, {
+        "serviceTypeId": "job_type_id:intermediate_classes",
+        "displayName": "Intermediate classes"
+      }, {
+        "serviceTypeId": "job_type_id:piano",
+        "displayName": "Piano"
+      }, {
+        "serviceTypeId": "job_type_id:private_lessons",
+        "displayName": "Private lessons"
+      }, {
+        "serviceTypeId": "job_type_id:saxophone",
+        "displayName": "Saxophone"
+      }, {
+        "serviceTypeId": "job_type_id:singing",
+        "displayName": "Singing"
+      }, {
+        "serviceTypeId": "job_type_id:trombone",
+        "displayName": "Trombone"
+      }, {
+        "serviceTypeId": "job_type_id:trumpet",
+        "displayName": "Trumpet"
+      }, {
+        "serviceTypeId": "job_type_id:tuba",
+        "displayName": "Tuba"
+      }, {
+        "serviceTypeId": "job_type_id:violin",
+        "displayName": "Violin"
+      }, {
+        "serviceTypeId": "job_type_id:voice",
+        "displayName": "Voice"
+      }, {
+        "serviceTypeId": "job_type_id:youth_classes",
+        "displayName": "Youth classes"
+      }],
+      "moreHoursTypes": [{
+        "hoursTypeId": "ACCESS",
+        "displayName": "Access",
+        "localizedDisplayName": "Access"
+      }, {
+        "hoursTypeId": "BREAKFAST",
+        "displayName": "Breakfast",
+        "localizedDisplayName": "Breakfast"
+      }, {
+        "hoursTypeId": "BRUNCH",
+        "displayName": "Brunch",
+        "localizedDisplayName": "Brunch"
+      }, {
+        "hoursTypeId": "DELIVERY",
+        "displayName": "Delivery",
+        "localizedDisplayName": "Delivery"
+      }, {
+        "hoursTypeId": "DINNER",
+        "displayName": "Dinner",
+        "localizedDisplayName": "Dinner"
+      }, {
+        "hoursTypeId": "DRIVE_THROUGH",
+        "displayName": "Drive through",
+        "localizedDisplayName": "Drive through"
+      }, {
+        "hoursTypeId": "HAPPY_HOUR",
+        "displayName": "Happy hours",
+        "localizedDisplayName": "Happy hours"
+      }, {
+        "hoursTypeId": "KITCHEN",
+        "displayName": "Kitchen",
+        "localizedDisplayName": "Kitchen"
+      }, {
+        "hoursTypeId": "LUNCH",
+        "displayName": "Lunch",
+        "localizedDisplayName": "Lunch"
+      }, {
+        "hoursTypeId": "ONLINE_SERVICE_HOURS",
+        "displayName": "Online service hours",
+        "localizedDisplayName": "Online service hours"
+      }, {
+        "hoursTypeId": "PICKUP",
+        "displayName": "Pickup",
+        "localizedDisplayName": "Pickup"
+      }, {
+        "hoursTypeId": "TAKEOUT",
+        "displayName": "Takeout",
+        "localizedDisplayName": "Takeout"
+      }, {
+        "hoursTypeId": "SENIOR_HOURS",
+        "displayName": "Senior hours",
+        "localizedDisplayName": "Senior hours"
+      }]
+    }
+  },
+  "storefrontAddress": {
+    "regionCode": "IN",
+    "languageCode": "en",
+    "postalCode": "560065",
+    "administrativeArea": "Karnataka",
+    "locality": "Bangalore",
+    "addressLines": ["#426, 21st Main, Judicial Layout, GKVK Post"]
+  },
+  "regularHours": {
+  },
+  "specialHours": {
+  },
+  "serviceArea": {
+  },
+  "adWordsLocationExtensions": {
+  },
+  "latlng": {
+    "latitude": 13.0876311,
+    "longitude": 77.5821359
+  },
+  "openInfo": {
+    "status": "OPEN",
+    "canReopen": true
+  },
+  "metadata": {
+    "placeId": "ChIJTYS3lGgZrjsRpqmYtVJwC7A"
+  },
+  "profile": {
+    "description": "Ninada School of Music, located in Bangalore, India, offers a musical journey rooted in the traditions of Carnatic music. With experienced teacher guiding students through the intricacies of melody, rhythm. Ninada School of Music creates a nurturing environment where aspiring musicians can explore and evolve their talents, fostering a deeper connection with the rich cultural heritage of their art form."
+  },
+  "relationshipData": {
+    "parentLocation": {
+    }
+  }
+}

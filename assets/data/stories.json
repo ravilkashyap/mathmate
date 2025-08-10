@@ -1,23 +1,65 @@
 [
-    {
-        "title": "Vedic Maths Workshop",
-        "date": "2025-07-20",
-        "excerpt": "Students learned rapid multiplication and mental math tricks in a fun hands‑on session.",
-        "image": "/assets/img/gallery/sample1.jpg",
-        "link": "/pages/method.html"
-    },
-    {
-        "title": "Chapter‑wise Test Series",
-        "date": "2025-06-10",
-        "excerpt": "Weekly assessments to track progress and give focused feedback.",
-        "image": "/assets/img/gallery/sample2.jpg",
-        "link": "/pages/courses.html"
-    },
-    {
-        "title": "Doubt Clearing Marathon",
-        "date": "2025-05-18",
-        "excerpt": "Extended doubt sessions before exams with one‑on‑one help.",
-        "image": "/assets/img/gallery/sample3.jpg",
-        "link": "/pages/contact.html"
-    }
+  {
+    "title": "Update #1",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipMradueRoxjb5lLbBtfdiNHmOARFsvf5UhA.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #2",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipMRawgWdxqa_z9CuqArkl1bfOy16yJFfbil.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #3",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipMRwKy7W5GTHRhgOkoSQEQ_VO0ViYMZGhC9.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #4",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipMWsC6fQV2mNiRnYG8WOXxoR06vjBpMXAsy.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #5",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipMYeBhAXcodvrGT--1-VKSJKX4pNnyhTR9D.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #6",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipMYoUQMmICUfA5y4mMHcvqbotYfeC46-qhz.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #7",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipN4YT-kx9SN1-yslZvcVsbMlOdzvuK3oaYZ.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #8",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipN7Y4cWGhSh-OmcLwKt39_tCTlH60Rp3wFF.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  },
+  {
+    "title": "Update #9",
+    "date": "",
+    "excerpt": "Recent activity from Google.",
+    "image": "/assets/img/updates/media-AF1QipN96EsNDPlLI0swYlYH7n2tmVlcxBY2rrtb.jpeg",
+    "link": "https://maps.app.goo.gl/hxZMF1Kmek4DwusAA"
+  }
 ]

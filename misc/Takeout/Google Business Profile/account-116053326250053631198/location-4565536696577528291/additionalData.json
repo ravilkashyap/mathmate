@@ -1,0 +1,347 @@
+{
+  "attributes": [{
+    "id": {
+      "attributeType": "LISTING_NAME"
+    },
+    "values": [{
+      "datum": {
+        "listingName": {
+          "text": "Math-Mate Tuition Centre"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "PHONE_NUMBER"
+    },
+    "values": [{
+      "datum": {
+        "phoneNumber": {
+          "phoneNumber": "094485 00475",
+          "metadata": {
+            "isPreferred": true
+          },
+          "phoneType": "VOICE"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "ADDRESS"
+    },
+    "values": [{
+      "datum": {
+        "address": {
+          "postalAddress": {
+            "regionCode": "IN",
+            "languageCode": "en",
+            "postalCode": "560065",
+            "administrativeArea": "Karnataka",
+            "locality": "Bengaluru",
+            "addressLines": ["426, 21st main, Judicial Layout", "GKVK Post"]
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "POINT"
+    },
+    "values": [{
+      "datum": {
+        "point": {
+          "latE7": 130875043,
+          "lngE7": 775821306
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "SERVICE_AREA"
+    },
+    "values": [{
+      "datum": {
+        "serviceArea": {
+          "namedPlace": {
+            "placeId": "ChIJ1dI391YYrjsRL5RdGCCN974",
+            "placeName": "Yelahanka, Bengaluru, Karnataka, India"
+          }
+        }
+      }
+    }, {
+      "datum": {
+        "serviceArea": {
+          "namedPlace": {
+            "placeId": "ChIJXc_ZXWAYrjsRuzsIhmTpHBs",
+            "placeName": "Yelahanka New Town, Bengaluru, Karnataka, India"
+          }
+        }
+      }
+    }, {
+      "datum": {
+        "serviceArea": {
+          "namedPlace": {
+            "placeId": "ChIJSW3uvEEYrjsR_N93hnNt5Vc",
+            "placeName": "Judicial Layout, Yelahanka, Bengaluru, Karnataka 560065, India"
+          }
+        }
+      }
+    }, {
+      "datum": {
+        "serviceArea": {
+          "namedPlace": {
+            "placeId": "ChIJ3zA8OokYrjsRrQgWqeUZgZQ",
+            "placeName": "4th Phase, Yelahanka New Town, Bengaluru, Karnataka 560064, India"
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "SIGNUP_REGION"
+    },
+    "values": [{
+      "datum": {
+        "signupRegion": {
+          "regionCode": "IN"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "CATEGORY"
+    },
+    "values": [{
+      "datum": {
+        "category": {
+          "gcid": "gcid:private_tutor",
+          "metadata": {
+            "isPrimary": true
+          },
+          "localizedName": "Private Tutor"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "WEBSITE"
+    }
+  }, {
+    "id": {
+      "attributeType": "OPENING_DATE"
+    },
+    "values": [{
+      "datum": {
+        "openingDate": {
+          "date": {
+            "year": 2016,
+            "month": 7
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "BUSINESS_EXISTENCE"
+    },
+    "values": [{
+      "datum": {
+        "businessExistence": {
+          "businessState": "OPEN"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "CLOSURE"
+    },
+    "values": [{
+      "datum": {
+        "closure": {
+          "type": "NOT_CLOSED"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "REGULAR_HOURS"
+    },
+    "values": [{
+      "datum": {
+        "regularHours": {
+          "periods": [{
+            "startDay": "MONDAY",
+            "openTime": {
+              "hours": 16,
+              "minutes": 30
+            },
+            "endDay": "MONDAY",
+            "closeTime": {
+              "hours": 21,
+              "minutes": 30
+            }
+          }, {
+            "startDay": "TUESDAY",
+            "openTime": {
+              "hours": 16,
+              "minutes": 30
+            },
+            "endDay": "TUESDAY",
+            "closeTime": {
+              "hours": 21,
+              "minutes": 30
+            }
+          }, {
+            "startDay": "WEDNESDAY",
+            "openTime": {
+              "hours": 16,
+              "minutes": 30
+            },
+            "endDay": "WEDNESDAY",
+            "closeTime": {
+              "hours": 21,
+              "minutes": 30
+            }
+          }, {
+            "startDay": "THURSDAY",
+            "openTime": {
+              "hours": 16,
+              "minutes": 30
+            },
+            "endDay": "THURSDAY",
+            "closeTime": {
+              "hours": 21,
+              "minutes": 30
+            }
+          }, {
+            "startDay": "FRIDAY",
+            "openTime": {
+              "hours": 16,
+              "minutes": 30
+            },
+            "endDay": "FRIDAY",
+            "closeTime": {
+              "hours": 21,
+              "minutes": 30
+            }
+          }]
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "EXCEPTIONAL_HOURS"
+    }
+  }, {
+    "id": {
+      "attributeType": "MERCHANT_DESCRIPTION"
+    },
+    "values": [{
+      "datum": {
+        "merchantDescription": {
+          "text": "A mathematics tuition where highly effective simplified learning methodology is applied in interactive studies where the following are provided.\n- Constructive Approach\n- Individual Attention\n- Concept Based Teaching\n- Chapter-wise Test\n- Regular Feedback\n- Counseling"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "SCALABLE_DEEP_LINK",
+      "scalableAttributeExternalId": "url_whatsapp"
+    },
+    "values": [{
+      "datum": {
+        "scalableDeepLink": {
+          "uri": "https://wa.me/919448500475"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "GEOSTORE_PRICE_INFO"
+    },
+    "values": [{
+      "datum": {
+        "geostorePriceInfo": {
+          "priceInfoProto": {
+            "@type": "type.googleapis.com/geostore.PriceInfoProto",
+            "status": {
+              "isVerified": true
+            }
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "VANITY_DATA"
+    }
+  }, {
+    "id": {
+      "attributeType": "FOOD_ORDERING_MERCHANT_PREFERENCE"
+    }
+  }, {
+    "id": {
+      "attributeType": "ACCEPTS_QUOTE_REQUESTS"
+    }
+  }, {
+    "id": {
+      "attributeType": "DISALLOW_PHONE_NUMBER_EDITS"
+    }
+  }, {
+    "id": {
+      "attributeType": "CALL_TRACKING"
+    }
+  }, {
+    "id": {
+      "attributeType": "ACCEPTS_SERVICE_REQUESTS"
+    }
+  }, {
+    "id": {
+      "attributeType": "QBC_PRODUCT_TYPE"
+    }
+  }, {
+    "id": {
+      "attributeType": "LABEL"
+    }
+  }, {
+    "id": {
+      "attributeType": "STORE_CODE"
+    }
+  }, {
+    "id": {
+      "attributeType": "GOOGLE_ADS_EXTENSION"
+    }
+  }, {
+    "id": {
+      "attributeType": "ASSISTANT_CALLS_SETTING"
+    }
+  }, {
+    "id": {
+      "attributeType": "CHAIN_SELF_IDENTIFICATION"
+    }
+  }, {
+    "id": {
+      "attributeType": "ADMIN_ROLE_CLAIM"
+    }
+  }, {
+    "id": {
+      "attributeType": "MESSAGING_METADATA"
+    },
+    "values": [{
+      "datum": {
+        "annotation": {
+          "payload": {
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "GLS_ACCOUNT_STATE"
+    }
+  }, {
+    "id": {
+      "attributeType": "NOREN_QR_CODE_ORDER"
+    }
+  }]
+}

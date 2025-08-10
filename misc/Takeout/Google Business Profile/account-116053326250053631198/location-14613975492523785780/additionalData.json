@@ -1,0 +1,230 @@
+{
+  "attributes": [{
+    "id": {
+      "attributeType": "LISTING_NAME"
+    },
+    "values": [{
+      "datum": {
+        "listingName": {
+          "text": "Ninada School of Music"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "PHONE_NUMBER"
+    },
+    "values": [{
+      "datum": {
+        "phoneNumber": {
+          "phoneNumber": "094485 00475",
+          "metadata": {
+            "isPreferred": true
+          },
+          "phoneType": "VOICE"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "ADDRESS"
+    },
+    "values": [{
+      "datum": {
+        "address": {
+          "postalAddress": {
+            "regionCode": "IN",
+            "languageCode": "en",
+            "postalCode": "560065",
+            "administrativeArea": "Karnataka",
+            "locality": "Bangalore",
+            "addressLines": ["#426, 21st Main, Judicial Layout, GKVK Post"]
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "POINT"
+    },
+    "values": [{
+      "datum": {
+        "point": {
+          "latE7": 130876311,
+          "lngE7": 775821359
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "SERVICE_AREA"
+    }
+  }, {
+    "id": {
+      "attributeType": "SIGNUP_REGION"
+    },
+    "values": [{
+      "datum": {
+        "signupRegion": {
+          "regionCode": "IN"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "CATEGORY"
+    },
+    "values": [{
+      "datum": {
+        "category": {
+          "gcid": "gcid:music_school",
+          "metadata": {
+            "isPrimary": true
+          },
+          "localizedName": "Music school"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "BUSINESS_EXISTENCE"
+    },
+    "values": [{
+      "datum": {
+        "businessExistence": {
+          "businessState": "OPEN"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "CLOSURE"
+    },
+    "values": [{
+      "datum": {
+        "closure": {
+          "type": "NOT_CLOSED"
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "REGULAR_HOURS"
+    }
+  }, {
+    "id": {
+      "attributeType": "MERCHANT_DESCRIPTION"
+    },
+    "values": [{
+      "datum": {
+        "merchantDescription": {
+          "text": "Ninada School of Music, located in Bangalore, India, offers a musical journey rooted in the traditions of Carnatic music. With experienced teacher guiding students through the intricacies of melody, rhythm. Ninada School of Music creates a nurturing environment where aspiring musicians can explore and evolve their talents, fostering a deeper connection with the rich cultural heritage of their art form."
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "SCALABLE_BOOLEAN",
+      "scalableAttributeExternalId": "welcomes_children"
+    }
+  }, {
+    "id": {
+      "attributeType": "DISALLOW_PHONE_NUMBER_EDITS"
+    },
+    "values": [{
+      "datum": {
+        "kgProperty": {
+          "valueProto": {
+            "@type": "type.googleapis.com/freebase.Value",
+            "type": "TYPE_BOOL",
+            "boolValue": false
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "WEBSITE"
+    }
+  }, {
+    "id": {
+      "attributeType": "OPENING_DATE"
+    }
+  }, {
+    "id": {
+      "attributeType": "EXCEPTIONAL_HOURS"
+    }
+  }, {
+    "id": {
+      "attributeType": "GEOSTORE_PRICE_INFO"
+    }
+  }, {
+    "id": {
+      "attributeType": "VANITY_DATA"
+    }
+  }, {
+    "id": {
+      "attributeType": "FOOD_ORDERING_MERCHANT_PREFERENCE"
+    }
+  }, {
+    "id": {
+      "attributeType": "ACCEPTS_QUOTE_REQUESTS"
+    }
+  }, {
+    "id": {
+      "attributeType": "CALL_TRACKING"
+    }
+  }, {
+    "id": {
+      "attributeType": "ACCEPTS_SERVICE_REQUESTS"
+    }
+  }, {
+    "id": {
+      "attributeType": "QBC_PRODUCT_TYPE"
+    }
+  }, {
+    "id": {
+      "attributeType": "LABEL"
+    }
+  }, {
+    "id": {
+      "attributeType": "STORE_CODE"
+    }
+  }, {
+    "id": {
+      "attributeType": "GOOGLE_ADS_EXTENSION"
+    }
+  }, {
+    "id": {
+      "attributeType": "ASSISTANT_CALLS_SETTING"
+    }
+  }, {
+    "id": {
+      "attributeType": "CHAIN_SELF_IDENTIFICATION"
+    }
+  }, {
+    "id": {
+      "attributeType": "ADMIN_ROLE_CLAIM"
+    }
+  }, {
+    "id": {
+      "attributeType": "MESSAGING_METADATA"
+    },
+    "values": [{
+      "datum": {
+        "annotation": {
+          "payload": {
+          }
+        }
+      }
+    }]
+  }, {
+    "id": {
+      "attributeType": "GLS_ACCOUNT_STATE"
+    }
+  }, {
+    "id": {
+      "attributeType": "NOREN_QR_CODE_ORDER"
+    }
+  }]
+}
